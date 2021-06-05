@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index",
-    "build": "cd client && npm install && npm run build",
+    "build": "cd client && npm install nodemon -g && npm install && npm run build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
@@ -35,7 +35,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.2",
-    "nodemon": "^2.0.6",
+    "nodemon": "^2.0.7",
     "prettier": "^2.1.1"
   }
 }
