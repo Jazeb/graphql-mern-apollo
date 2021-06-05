@@ -1,3 +1,4 @@
+require('dotenv').config();
 /* eslint-disable no-console */
 const { ApolloServer, PubSub } = require('apollo-server');
 const mongoose = require('mongoose');
@@ -18,7 +19,7 @@ const server = new ApolloServer({
 });
 
 mongoose
-  .connect(MONGODB, {
+  .connect(process.env.MONGODB, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -30,5 +31,6 @@ mongoose
     console.log(`Server running at ${res.url}`);
   })
   .catch((err) => {
+    console.log('CANNOT connect to mongodb')
     console.error(err);
   });
