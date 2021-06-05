@@ -1,2 +1,3 @@
 const SECRET_KEY = 'taejong'
-module.exports = { SECRET_KEY };
+const MONGODB = 'mongodb://localhost/testdb'
+module.exports = { SECRET_KEY, MONGODB };
