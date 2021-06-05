@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index",
+    "start": "node index",
     "build": "cd client && npm install && npm run build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
