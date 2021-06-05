@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "build": "cd client && npm install nodemon -g && npm install && npm run build",
+    "serve": "node index",
+    "start": "nodemon index",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
